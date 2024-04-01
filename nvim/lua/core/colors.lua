@@ -2,6 +2,7 @@ vim.opt.termguicolors = true
 
 function SetColor(color)
     color = color or "onedark"
+    vim.o.background = "dark"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
@@ -20,4 +21,5 @@ function SetColor(color)
     vim.api.nvim_set_hl(0, "DiagnosticSignInfo", {bg = "none", fg="#7BD3EA"})
 end
 
-SetColor('kanagawa')
+SetColor('gruvbox')
+

@@ -1,8 +1,8 @@
 -- Basic
 require('core.plugins')
 require('core.mappings')
-require('core.colors')
 require('core.config')
+require('core.colors')
 
 -- Plugins
 require('plugins.neotree')

@@ -33,7 +33,6 @@ require("lazy").setup({
   {'hrsh7th/cmp-cmdline'}, 
   {'hrsh7th/nvim-cmp'}, 
   {'hrsh7th/cmp-nvim-lsp' },
-  {'rebelot/kanagawa.nvim'},
   {'williamboman/nvim-lsp-installer'},
   {'terrortylor/nvim-comment'},
   {'williamboman/mason.nvim'},
@@ -60,5 +59,6 @@ require("lazy").setup({
 {'akinsho/toggleterm.nvim', version = "*", config = true},
 {"folke/which-key.nvim"},
 {"theprimeagen/vim-be-good"},
+{ "ellisonleao/gruvbox.nvim"}
 })
 
