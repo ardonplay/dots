@@ -19,6 +19,7 @@ function SetColor(color)
     vim.api.nvim_set_hl(0, "DiagnosticSignHint", {bg = "none", fg="#7BD3EA"})
     vim.api.nvim_set_hl(0, "DiagnosticSignWarn", {bg = "none", fg="#FFF78A"})
     vim.api.nvim_set_hl(0, "DiagnosticSignInfo", {bg = "none", fg="#7BD3EA"})
+    vim.api.nvim_set_hl(0, "NotifyBackground", {bg = "none", fg="#000000"})
 end
 
 SetColor('gruvbox')

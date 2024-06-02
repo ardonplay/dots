@@ -5,20 +5,6 @@ require('core.config')
 require('core.colors')
 
 -- Plugins
-require('plugins.neotree')
-require('plugins.treesitter')
-require('plugins.lsp')
-require('plugins.lspinstaller')
-require('plugins.comments')
-require('plugins.cmp')
-require('plugins.mason')
-require('plugins.telescope')
-require('plugins.nullls')
-require('plugins.autopairs')
-require('plugins.autotag')
-require('plugins.buffline')
-require('plugins.dashboard')
-require('plugins.gitsigns')
-require('plugins.lualine')
-require('plugins.toggleterm')
-require('plugins.whichkey')
+for _, file in ipairs(vim.fn.readdir(vim.fn.stdpath('config')..'/lua/plugins', [[v:val =~ '\.lua$']])) do
+    require('plugins.'..file:gsub('%.lua$', ''))
+  end

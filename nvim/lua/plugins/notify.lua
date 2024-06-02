@@ -1,0 +1,1 @@
+require("notify").setup({backgroud_color = "#000000"})
