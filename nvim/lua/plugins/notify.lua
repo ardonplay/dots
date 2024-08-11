@@ -1,1 +1,4 @@
-require("notify").setup({backgroud_color = "#000000"})
+require("notify").setup({vim.tbl_extend('keep', {
+    -- other stuff
+    background_colour = "#000000"
+  }, {})})
